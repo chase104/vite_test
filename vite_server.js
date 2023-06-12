@@ -6,7 +6,8 @@ const path = require('path');
 const app = express();
 
 // Configure the app (app.set)
-app.use(express.static(path.join(__dirname, 'my_vite_app/dist')));
+app.use(express.static(path.join(__dirname, 'client/dist')));
+// app.use(express.static(path.join(__dirname, 'my_vite_app/dist')));
 
 
 // Mount middleware (app.use)
