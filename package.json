@@ -1,5 +1,6 @@
 {
   "name": "vite_full",
+
   "version": "1.0.0",
   "description": "",
   "main": "vite_server.js",
