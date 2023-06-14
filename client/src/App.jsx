@@ -7,11 +7,26 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0);
 
+  const formData = {
+    name: "Chase",
+    email: "email@email",
+    admin: false
+  }
+
   useEffect(() => {
-    axios('/extra_data').then((res) => {
-      console.log(res.data);
+    axios({
+      method: 'GET',
+      url: '/fruits',
+      data: {
+        nam: "apple",
+        age: 40,
+        canEat: false
+      }
     })
   }, []);
+
+
+
 
   return (
     <>
